@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perpusmini - Tambah/Edit Buku</title>
+</head>
+<body>
+
+  <header>
+    <h1>Perpusmini</h1>
+    <nav>
+      <a href="index.html">Daftar Buku</a> |
+      <a href="form.html">Tambah Buku</a> |
+      <a href="detail.html">Contoh Detail Buku</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Form Tambah / Edit Buku</h2>
+
+      <form action="#" method="POST">
+
+        <p>
+          <label for="judul">Judul Buku:</label><br />
+          <input type="text" id="judul" name="judul" required />
+        </p>
+
+        <p>
+          <label for="penulis">Nama Penulis:</label><br />
+          <input type="text" id="penulis" name="penulis" required />
+        </p>
+
+        <p>
+          <label for="kategori">Kategori:</label><br />
+          <select id="kategori" name="kategori">
+            <option value="fiksi">Fiksi</option>
+            <option value="non-fiksi">Non-Fiksi</option>
+          </select>
+        </p>
+
+        <fieldset>
+          <legend>Status</legend>
+          <input type="radio" id="tersedia" name="status" value="tersedia" checked />
+          <label for="tersedia">Tersedia</label>
+
+          <input type="radio" id="dipinjam" name="status" value="dipinjam" />
+          <label for="dipinjam">Dipinjam</label>
+        </fieldset>
+
+        <p>
+          <label for="sinopsis">Sinopsis:</label><br />
+          <textarea id="sinopsis" name="sinopsis" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <input type="submit" value="Simpan" />
+          <input type="reset" value="Reset" />
+        </p>
+
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Perpusmini</p>
+  </footer>
+
+</body>
+</html>
